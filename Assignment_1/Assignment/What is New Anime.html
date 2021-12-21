@@ -20,7 +20,10 @@ body, html {
   background-size: cover;
 }
 </style>
-</head>
+
+
+
+<head>
 </head>
 <body>
 
@@ -28,7 +31,23 @@ body, html {
 
 <div style="height:0px;background-color:transparent;font-size:36px">
 <img src="Nezuko.jpg" alt="Nezuko" width="600" height="333">
-<h1>Modern Anime</h1>
+
+<style>
+      #blink {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #e30e2a;
+        transition: 0.4s;
+      }
+    </style>
+ <p id="blink">Modern Anime</p>
+    <script type="text/javascript">
+      var blink = document.getElementById('blink');
+      setInterval(function() {
+        blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+      }, 1000);
+    </script>	
 <p>On contast to old anime which each frame is drawn onto a cell and printed, <br>
 modern anime uses computer generated graphics. This method allows animator to <br>
 animate more smoothly and higher quality frames. some fans perfer the old anime <br>
