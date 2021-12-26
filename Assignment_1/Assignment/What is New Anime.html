@@ -11,12 +11,24 @@ body, html {
   background-image: url('BadApple.gif');
 
 
-  height: 100%; 
+  height: 100%;
 
   background-attachment:fixed;
   background-position:bottom;
   background-repeat:no-repeat;
   background-size:cover;
+}
+      #blink {
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Arial;
+        color: #e30e2a;
+        transition: 0.4s;
+      }
+	  p  {
+  color: red;
+  font-family: Arial;
+  font-size: 60%;
 }
 </style>
 </head>
@@ -27,23 +39,16 @@ body, html {
 <div style="height:0px;position:top;background-color:transparent;font-size:36px">
 <img src="Nezuko.jpg" alt="Nezuko" width="600" height="333">
 
-<style>
-      #blink {
-        font-size: 40px;
-        font-weight: bold;
-        font-family: Arial;
-        color: #e30e2a;
-        transition: 0.4s;
-      }
-    </style>
- <p id="blink">Modern Anime</p>
+ <h1 id="blink">Modern Anime</h1>
+
     <script type="text/javascript">
       var blink = document.getElementById('blink');
       setInterval(function() {
         blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
       }, 100);
-    </script>	
-<p>On contrast to old anime which each frame is drawn onto a cell and printed, <br>
+    </script>
+
+ <p>On contrast to old anime which each frame is drawn onto a cell and printed, <br>
 modern anime uses computer generated graphics. This method allows animator to <br>
 animate more smoothly and higher quality frames. some fans perfer the old anime <br>
 as they offer unique design per studio showing the artists talent and diversity <br>
@@ -60,7 +65,7 @@ as opposed digital animation, which most of it is gone.
 <audio controls autoplay>
 
   <source src="Apple.mp3" type="audio/mpeg">
-  
+
 </audio>
 
 </body>
