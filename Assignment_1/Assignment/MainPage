@@ -20,6 +20,7 @@ body, html {
   background-size: cover;
 }
 </style>
+
 </head>
 <body>
 
@@ -40,15 +41,15 @@ body, html {
 
 <script>
 
-	let  myButton = document.getElementById('my-button')
-	function myFunc() {
+	//let  myButton = document.getElementById('my-button')
+	//function myFunc() {
 
-	let num = (document.getElementById("my-text-feild").value +10)
-  let currentYear= 2021
-	if newText = ( num > currentYear) {
-    return true
-    else false
-}
+	//let num = (document.getElementById("my-text-feild").value +10)
+  //let currentYear= 2021
+	//if newText = ( num > currentYear) {
+    //return true
+    //else false
+//}
 	document.getElementById("newText").innerHTML=newText;
 	}
 	myButton.addEventListener("click",myFunc)
