@@ -39,23 +39,8 @@ body, html {
 <div class="parallax"></div>
 
 
-<script>
 
-	//let  myButton = document.getElementById('my-button')
-	//function myFunc() {
-
-	//let num = (document.getElementById("my-text-feild").value +10)
-  //let currentYear= 2021
-	//if newText = ( num > currentYear) {
-    //return true
-    //else false
-//}
-	document.getElementById("newText").innerHTML=newText;
-	}
-	myButton.addEventListener("click",myFunc)
-
-
-</script>
+<script src="./JS/isAnimeOldFunc.js"></script>
 
 </body>
 </html>
