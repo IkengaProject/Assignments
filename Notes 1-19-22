@@ -1,0 +1,44 @@
+APIs
+What is it
+applcation program interface
+
+It is an interface that allows us to use other programmer's programs
+  like google maps api
+  or NASAs APIs
+
+Hypertext Transfer Protocol (HTTP)
+is an application-layer protocol for transmitting hypermedia documents, such as HTML.
+
+5 parts of a http request
+  Method- most common (getting)
+  Path- resources, slashes are subpages
+  Version of the Protocol
+  Headers- information about the machine (can store authenticators or credentials. Chaching, Host, meta-data.
+    About the requesting coming in )
+    Body- contains information additional information.
+
+Nouns
+  Get
+  Post
+  Options
+  Head
+
+  http sheat sheet
+
+  http respones
+    version of protocol
+    status code
+    status message
+    headers
+    body
+
+JSON (java script object notation)- A type pf repsone you can get, can be file. A way to distribute information
+fro javascript
+-a file format of javascript objects
+-cant be a variable, or a functions
+-can be a list
+
+
+ Fetch API
+ Provides a javascript interface for accessing and manipulating parts if the http pipeline,
+  such as request and response.  

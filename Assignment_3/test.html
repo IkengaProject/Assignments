@@ -22,11 +22,29 @@
   <p id="testCase5"></p>
   <body>
     <script type="text/javascript">
-      let howManyEven = (array) => {
-        return 0
+      let howManyEven= (case1) => {
+        let evenNum= 0
+        for (i=0; i< case1.length; i++) {
+          if (case1[i] % 2 ===0) {
+          evenNum++
+          console.log(evenNum + " This is counter");
+          console.log(case1[i]);
       }
-      let howManyOdd = (array) => {
-        return 0
+    }
+        return evenNum
+      }
+
+
+      let howManyOdd = (case1) => {
+        let oddNum= 0
+        for (i=0; i< case1.length; i++) {
+          if (case1[i] % 2 !=0) {
+          evenNum++
+          console.log(oddNum + " This is counter");
+          console.log(case1[i]);
+      }
+    }
+        return oddNum
       }
     </script>
 
