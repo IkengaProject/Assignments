@@ -9,10 +9,11 @@ let genericTest = (testName, resultLocation , func, param, expectedValue) => {
 
 let responseElem = (bool, testName, expected, actual, input) => {
   let node = document.createElement("p")
+  input = JSON.stringify(input)
   let successMessage =  `${testName}: Success, Expected result: ${expected},
   Actual Output: ${actual}, Input: ${input}`
   let failMessage = `Failed ${testName}: Expected result: ${expected},
-  Actual Output: ${actual}, Input ${input}`
+  Actual Output: ${actual}, Input: ${input}`
   node.innerText = (bool) ? successMessage : failMessage
   node.className = (bool) ? "success" : `fail`
   return node
