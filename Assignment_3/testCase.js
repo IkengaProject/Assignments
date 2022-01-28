@@ -1,17 +1,18 @@
-let testCase1 = (functionParam) => {
-  console.log("Running test case 1")
-  // howManyEven = [1,2,3,4,5]
-  let case1 = [1,2,3,4,5]
-  let testCase1Elem = document.getElementById("testCase1")
-  console.log(testCase1Elem)
-  let result = functionParam(case1);
-  if(result === 2) {
-    testCase1Elem.className = "success"
-    testCase1Elem.innerText = "Test Passed"
-  } else {
-      console.log("Test failed")
-      testCase1Elem.className = "fail"
-      testCase1Elem.innerText = `Failed Test 1: Expected result: 2, Actual Output: ${result}`
-  }
+let genericTest = (testName, resultLocation , func, param, expectedValue) => {
+  console.log(`Running ${testName}`)
+  let case1 = param
+  let testCaseElem = document.getElementById(resultLocation)
+  let result = func(case1);
+  testCaseElem.appendChild(responseElem((result === expectedValue), testName,
+  expectedValue, result, param))
 }
-testCase1(howManyEven)
+
+let responseElem = (bool, testName, expected, actual, input) => {
+  let node = document.createElement("p")
+  let successMessage =  `${testName}: Success, Expected result: ${expected},
+  Actual Output: ${actual}, Input: ${input}`
+  let failMessage = `Failed ${testName}: Expected result: ${expected}, Actual Output: ${actual}, Input ${input}`
+  node.innerText = (bool) ? successMessage : failMessage
+  node.className = (bool) ? "success" : `fail`
+  return node
+}
