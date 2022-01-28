@@ -11,7 +11,8 @@ let responseElem = (bool, testName, expected, actual, input) => {
   let node = document.createElement("p")
   let successMessage =  `${testName}: Success, Expected result: ${expected},
   Actual Output: ${actual}, Input: ${input}`
-  let failMessage = `Failed ${testName}: Expected result: ${expected}, Actual Output: ${actual}, Input ${input}`
+  let failMessage = `Failed ${testName}: Expected result: ${expected},
+  Actual Output: ${actual}, Input ${input}`
   node.innerText = (bool) ? successMessage : failMessage
   node.className = (bool) ? "success" : `fail`
   return node
