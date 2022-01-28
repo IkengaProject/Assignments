@@ -11,15 +11,16 @@
           color: red;
         }
         p {
-          font-size: 200px;
+          font-size: 50px;
         }
       </style>
   </head>
-  <p id="testCase1"></p>
-  <p id="testCase2"></p>
-  <p id="testCase3"></p>
-  <p id="testCase4"></p>
-  <p id="testCase5"></p>
+  <div id="even">
+    <h1>How many even test results:</h1>
+  </div>
+  <div id="odd">
+    <h1>How many odd test results:</h1>
+  </div>
   <body>
     <script type="text/javascript">
       let howManyEven= (case1) => {
@@ -49,5 +50,21 @@
     </script>
 
     <script src="./testCase.js"></script>
+    <script>
+    //Running Tests
+    //How Many Even
+    genericTest("howManyEven Test 1", "even", howManyEven, [1,2,3,4,5], 2)
+    genericTest("howManyEven Test 2", "even", howManyEven, [1,3,5], 0)
+    genericTest("howManyEven Test 3", "even", howManyEven, [], 0)
+    genericTest("howManyEven Test 4", "even", howManyEven, ['2'], 0)
+    genericTest("howManyEven Test 5", "even", howManyEven, [-2, 2.3, 10001, 58], 2)
+
+    // How Many Odd
+    genericTest("howManyOdd Test 1", "odd", howManyOdd, [1,2,3,4,5], 3)
+    genericTest("howManyOdd Test 2", "odd", howManyOdd, [2,24], 0)
+    genericTest("howManyOdd Test 3", "odd", howManyOdd, [], 0)
+    genericTest("howManyOdd Test 4", "odd", howManyOdd, ['3'], 0)
+    genericTest("howManyOdd Test 5", "odd", howManyOdd, [-2, 2.3, 10001, 58], 1)
+    </script>
   </body>
 </html>
