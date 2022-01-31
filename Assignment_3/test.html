@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Suite</title>
+      <style>
+        .success {
+          color: green;
+        }
+        .fail {
+          color: red;
+        }
+        p {
+          font-size: 50px;
+        }
+      </style>
+  </head>
+  <div id="even">
+    <h1>How many even test results:</h1>
+  </div>
+  <div id="odd">
+    <h1>How many odd test results:</h1>
+  </div>
+  <body>
+    <script type="text/javascript">
+      let howManyEven= (case1) => {
+        let evenNum= 0
+        for (i=0; i< case1.length; i++) {
+          if (case1[i] % 2 ===0) {
+          evenNum++
+          console.log(evenNum + " This is counter");
+          console.log(case1[i]);
+      }
+    }
+        return evenNum
+      }
+
+
+      let howManyOdd = (case1) => {
+        let oddNum= 0
+        for (i=0; i< case1.length; i++) {
+          if (case1[i] % 2 !=0) {
+          oddNum++
+          console.log(oddNum + " This is counter");
+          console.log(case1[i]);
+      }
+    }
+        return oddNum
+      }
+    </script>
+
+    <script src="./testCase.js"></script>
+    <script>
+    //Running Tests
+    //How Many Even
+    genericTest("howManyEven Test 1", "even", howManyEven, [1,2,3,4,5], 2)
+    genericTest("howManyEven Test 2", "even", howManyEven, [1,3,5], 0)
+    genericTest("howManyEven Test 3", "even", howManyEven, [], 0)
+    genericTest("howManyEven Test 4", "even", howManyEven, ['2'], 0)
+    genericTest("howManyEven Test 5", "even", howManyEven, [-2, 2.3, 10001, 58], 2)
+
+    // How Many Odd
+    genericTest("howManyOdd Test 1", "odd", howManyOdd, [1,2,3,4,5], 3)
+    genericTest("howManyOdd Test 2", "odd", howManyOdd, [2,24], 0)
+    genericTest("howManyOdd Test 3", "odd", howManyOdd, [], 0)
+    genericTest("howManyOdd Test 4", "odd", howManyOdd, ['3'], 0)
+    genericTest("howManyOdd Test 5", "odd", howManyOdd, [-2, 2.3, 10001, 58], 1)
+    </script>
+  </body>
+</html>
