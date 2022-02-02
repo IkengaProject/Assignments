@@ -8,7 +8,11 @@
 ## Basa's Assignment
 1. Write a function that writes to the console any number to 1000
 `let countTo1000 = (num) => {
-  // Insert code here
+  // <script>
+for (let x = 0; x < 1000; x++) {
+  console.count();
+}
+</script>
   }`
   - Example usage: countTo1000(5)
   `5
@@ -21,7 +25,12 @@
   `
 2. Write a function that converts celsius to farenheit
 `let cToF = (x) => {
-  // Insert code here
+  Let X=Farenheit
+  // Farenheit=(celsius*1.8)+32
+    celsius=((Farenheit-32)*5)/9
+    System.out.printIn(
+      "Value of Temperature in 'F"+Farenheit
+      )
   }`
   - Example usage: cToF(0) should return 32
 3. Write a function that writes to the console any number to any other number
