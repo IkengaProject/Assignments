@@ -26,10 +26,11 @@
       let howManyEven= (case1) => {
         let evenNum= 0
         for (i=0; i< case1.length; i++) {
+          if(typeof(case1[i]) === "string") {
+            continue
+          }
           if (case1[i] % 2 ===0) {
           evenNum++
-          console.log(evenNum + " This is counter");
-          console.log(case1[i]);
       }
     }
         return evenNum
@@ -39,10 +40,14 @@
       let howManyOdd = (case1) => {
         let oddNum= 0
         for (i=0; i< case1.length; i++) {
+          if((typeof(case1[i]) === "string")) {
+            continue
+          }
+          if ( (case1[i] % 1 !=0 )) {
+            continue
+          }
           if (case1[i] % 2 !=0) {
           oddNum++
-          console.log(oddNum + " This is counter");
-          console.log(case1[i]);
       }
     }
         return oddNum
