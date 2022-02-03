@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test Suite</title>
+      <style>
+        .success {
+          color: green;
+        }
+        .fail {
+          color: red;
+        }
+        p {
+          font-size: 50px;
+        }
+      </style>
+  </head>
+  <div id="CToF">
+    <h1>Celsius to Farenheit:</h1>
+  </div>
+  <body>
+    <script type="text/javascript">
+    let countTo1000 = (num) => {
+      // <script>
+      for (let x = 0; x < 1000; x++) {
+        console.count();
+      }
+    }
+
+    let cToF = (x) => {
+      let X=Farenheit
+      // Farenheit=(celsius*1.8)+32
+        celsius=((Farenheit-32)*5)/9
+        System.out.printIn(
+          "Value of Temperature in 'F"+Farenheit
+          )
+      }
+
+    </script>
+
+    <script src="./testCase.js"></script>
+    <script>
+    //Running Tests
+    //Celsius to Farenheit
+    genericTest("Celsius to Farenheit Test 1", "CToF", cToF, 0, 32)
+    genericTest("Celsius to Farenheit Test 2", "CToF", cToF, 100, 212)
+    genericTest("Celsius to Farenheit Test 3", "CToF", cToF, 50, 122)
+
+
+
+    </script>
+  </body>
+</html>
