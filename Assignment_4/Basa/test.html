@@ -21,7 +21,30 @@
   <body>
     <script type="text/javascript">
 
-let "Anime1"= {
+class Anime {
+  constructor(name, japanese, age, genre, isFavorite, respond) {
+    this.name = name
+    this.japanese = japanese
+    this.age = age
+    this.genre = genre
+    this.isFavorite = isFavorite
+    this.respond = respond
+  }
+  sayFavAnime() {
+    console.log(this.isFavorite)
+  }
+
+  respond() {
+    console.log(this.respond)
+    //console.image() Can't get this to work
+  }
+}
+
+let anime1 = new Anime("Moonlight Lady", "顔のない月", "2001",
+"Hentai", "Favorite", "Not Favorite")
+
+
+let Anime1= {
   name: "Moonlight Lady",
   japanese: "顔のない月",
   age: "2001",
@@ -29,37 +52,40 @@ let "Anime1"= {
   sayFavAnime: () => {
     console.log("Favorite")
   },
-  respond: (param) =>
-    console.log("Not Favorite");
+  respond: (param) => {
+    console.log("Not Favorite")
     console.image("Anime1");
     }
+  }
 
-let "Anime2"= {
+let Anime2 = {
   name: "Brighter Than Dawning Blue",
-  japanese: "夜明け前より瑠璃色な"",
+  japanese: "夜明け前より瑠璃色な",
   age: "2007",
   genre: "Hentai",
   sayFavAnime: () => {
     console.log("Favorite")
   },
-  respond: (param) =>
+  respond: (param) => {
     console.log("Not Favorite");
     console.image("Anime2");
     }
+  }
 
-let "Anime3"= {
+let Anime3= {
   name: "Boku No Pico",
   japanese: "ぼくのぴこ",
-  age: "2006"
-  genre: Gayshit,
+  age: "2006",
+  genre: "Gayshit",
   sayFavAnime: () => {
     console.log("Favorite")
   },
-  respond: (param) =>
+  respond: (param) =>{
     console.log("This is Miguel's Favorite")
     }
+  }
 
-let "Anime4"= {
+let Anime4 = {
   name: "Shakugan_No_Shana",
   japanese: "灼眼のシャナ",
   age: "2005-2012",
@@ -67,23 +93,24 @@ let "Anime4"= {
   sayFavAnime: () => {
     console.log("Favorite")
   },
-  respond: (param) =>
+  respond: (param) => {
     console.log("This my Favorite");
     console.image("Anime4");
-
     }
+  }
 
-let "Anime5"= {
+let Anime5= {
   name: "BibleBlack",
-  japanese: ""バイブルブラック"",
+  japanese: "バイブルブラック",
   age: "2001",
   genre: "Hentai",
   sayFavAnime: () => {
     console.log("Favorite")
   },
-  respond: (param) =>
+  respond: (param) => {
     console.log("This is Manny's Favorite");
     console.image("Anime5");
+ }
 }
 
 let countTo1000 = (num) => {
@@ -94,12 +121,12 @@ let countTo1000 = (num) => {
 }
 
 let cToF = (x) => {
-  let X=Farenheit
-  // Farenheit=(celsius*1.8)+32
-    celsius=((Farenheit-32)*5)/9
-    System.out.printIn(
-      "Value of Temperature in 'F"+Farenheit
-      )
+  let celsius = x
+    Farenheit=(celsius*1.8)+32
+    //celsius=((Farenheit-32)*5)/9
+
+      console.log("Value of Temperature in 'F"+Farenheit)
+    return Farenheit
   }
 
     </script>
@@ -113,6 +140,9 @@ let cToF = (x) => {
     genericTest("Celsius to Farenheit Test 3", "CToF", cToF, 50, 122)
 
 
+
+    </script>
+    <script src='../notes.js'>
 
     </script>
   </body>
