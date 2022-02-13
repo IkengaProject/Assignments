@@ -5,7 +5,13 @@
     <title>NASA</title>
     <style>
 
-
+    .parallax {
+      background-image: url(..翼/images/Earth-chan.jpg)
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
 
 
 
