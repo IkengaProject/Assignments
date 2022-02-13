@@ -7,15 +7,14 @@
 
     .parallax {
 
-      background-image: url(..翼/images/Earth-chan.jpg)
-
-      height:100%;
+      background-image: url("..翼/images/Earth-chan.jpg");
+      
+      min-height: 500px;
 
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-  }
 
 
     </style>
