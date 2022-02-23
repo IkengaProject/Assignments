@@ -2,7 +2,7 @@
   height:500px;
   background-color:white;
   font-size:36px;
-  color:white;
+  color:Black;
 }
 
 #secondText{
@@ -13,7 +13,13 @@
   color:blue
 }
 
+#dexText{
+  height: auto;
+  width: auto;
+  background-color: inherit;
+  font-size: 36px
 
+}
 body, html {
   height: 100%;
 }
@@ -23,6 +29,25 @@ body, html {
   background-image: url("../pics/pokedex1.jpg");
   height: 100%;
   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
+.parallax2 {
+  background-color: blue;
+  background-image: url("../pics/pokeball.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
+.parallax3 {
+  background-color: blue;
+  background-image: url("../pics/pokedex1.jpg");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50% 100%;
