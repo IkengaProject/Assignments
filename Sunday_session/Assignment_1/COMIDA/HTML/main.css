@@ -1,0 +1,15 @@
+#blue {
+  color: blue;
+}
+h5 {
+  color: red;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.pink {
+  color: pink;
+  background-color: green;
+}
+.special-image {
+  height: 5000px;
+  width: 5000px;
+}
