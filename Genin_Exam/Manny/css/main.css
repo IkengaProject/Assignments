@@ -14,12 +14,24 @@
 }
 
 #dexText{
-  height: auto;
+  height: 50px;
   width: auto;
   background-color: inherit;
-  font-size: 36px
+  font-size: 36px;
 
 }
+
+.dexScreen{
+  background-color: red;
+  height: 500px;
+  width: 750px;
+  margin-top: 50px;
+  margin-left: 550px;
+  margin-right: 550px;
+  box-shadow: 2px 3px 7px rgba(0, 0, 0, 0.02);
+  padding: 20px;
+}
+
 body, html {
   height: 100%;
 }
@@ -46,8 +58,19 @@ body, html {
 
 .parallax3 {
   background-color: blue;
-  background-image: url("../pics/pokedex1.jpg");
+  background-image: url("../pics/openpokedex1.jpg");
   height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  background-attachment: scroll;
+}
+
+.parallax4 {
+  background-color: blue;
+  background-image: url("../pics/pokedex.gif");
+  height: 100%;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50% 100%;
