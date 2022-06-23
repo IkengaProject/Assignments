@@ -1,0 +1,17 @@
+body{
+  background-color: #1F2125;
+}
+
+li {
+  color: #808080;
+}
+
+.menu {
+  font-family: sans-serif;
+}
+.footer {
+  background-color: #000000;
+  height:400px;
+  width: 800px;
+
+}
